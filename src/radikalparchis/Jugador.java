@@ -14,10 +14,10 @@ import java.util.ArrayList;
  */
 public class Jugador {
     
-    public static final String ROJO = new String();
-    public static final String AZUL = new String();
-    public static final String AMARILLO = new String();
-    public static final String VERDE = new String();
+    public static final String ROJO = "Rojo";
+    public static final String AZUL = "Azul";
+    public static final String AMARILLO = "Amarillo";
+    public static final String VERDE = "Verde";
     
     private String color;
     private ArrayList<Ficha> fichas;

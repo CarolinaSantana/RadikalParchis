@@ -17,6 +17,8 @@ public class Casilla {
 
     public Casilla(boolean esSegura) {
         this.esSegura = esSegura;
+        fichas[0]=null;
+        fichas[1]=null;
     }
     
     public Casilla() {
@@ -25,7 +27,14 @@ public class Casilla {
 
     @Override
     public String toString() {
-        return "Casilla{" + "fichas=" + fichas + ", esSegura=" + esSegura + '}';
+        String resultado="Casilla{";
+        for (int i = 0; i < fichas.length; i++) {
+            if(fichas[i]!=null)
+            {
+                resultado += "fichas=" + fichas[i];
+            }
+        }
+        return resultado + ", esSegura=" + esSegura + '}';
     }
     
 }

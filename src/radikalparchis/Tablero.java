@@ -27,7 +27,10 @@ public class Tablero {
     private Casa casaAmarilla;
 
     public Tablero() {
-        this.casillas = new Casilla[68];
+        this.casillas = new Casilla[2];
+        for (int i = 0; i < casillas.length; i++) {
+            casillas[i] = new Casilla();
+        }
         this.pasilloRojo = new Pasillo();
         this.casaRoja = new Casa();
         this.pasilloAzul = new Pasillo();
@@ -45,7 +48,8 @@ public class Tablero {
 
     private String showCasillas() {
         String resultado = "";
-        for (Casilla casilla : this.casillas) {
+        for (int i = 0; i < casillas.length; i++) {
+            Casilla casilla = casillas[i];
             resultado += casilla.toString();
         }
         return resultado;
