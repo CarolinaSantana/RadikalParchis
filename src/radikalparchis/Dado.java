@@ -10,13 +10,10 @@ package radikalparchis;
  *
  * @author ENTRAR
  */
-public class RadikalParchis {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class Dado {
+    
+    public int getTirada() {
+        return 0;
     }
     
 }
